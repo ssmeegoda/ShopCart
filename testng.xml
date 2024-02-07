@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+	  <parameter name="login_status" value="true"></parameter>
+	  <parameter name="product" value="tab"></parameter>
+	  <parameter name="category" value="57"></parameter>
+	  <parameter name="sortPrice" value="Price (Low > High)"></parameter>
+	   <parameter name="qty" value="2"></parameter>
+	  
+    <classes>	
+      <class name="com.shop.tests.IndexpageTest"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

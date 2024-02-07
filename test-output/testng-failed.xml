@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test(failed)">
+    <parameter name="login_status" value="true"/>
+    <parameter name="product" value="tab"/>
+    <parameter name="qty" value="2"/>
+    <parameter name="category" value="57"/>
+    <parameter name="sortPrice" value="Price (Low &gt; High)"/>
+    <classes>
+      <class name="com.shop.tests.IndexpageTest">
+        <methods>
+          <include name="loadConfig"/>
+          <include name="addToCart" invocation-numbers="0"/>
+          <include name="setUp"/>
+          <include name="tearDwon"/>
+        </methods>
+      </class> <!-- com.shop.tests.IndexpageTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
